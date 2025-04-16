@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')  # Set the backend before importing pyplot
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
@@ -8,6 +10,11 @@ from datetime import datetime, timedelta
 import database as db
 import scheduler as sch
 import reports as rpt
+
+
+
+
+
 
 # Configuration
 APP_TITLE = "Master Scheduler - Labor Cost & Schedule Optimization"
