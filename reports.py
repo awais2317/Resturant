@@ -3,9 +3,13 @@ Reports module for Master Scheduler application.
 Handles all reporting and analysis functionality.
 """
 
+
+
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')  # Set the backend before importing pyplot
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta, date
 import io
